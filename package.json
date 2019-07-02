@@ -1,0 +1,37 @@
+{
+  "name": "simple-custom-event",
+  "version": "0.1.0",
+  "description": "Simple custom event implementation, with polyfill",
+  "main": "./dist/simple-custom-event.js",
+  "author": "Marcin Dobroszek <marcin@silversite.pl>",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "dev:watch": "webpack --mode development --watch",
+    "build": "webpack -p"
+  },
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "homepage": "https://github.com/cichy380/simple-custom-event#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cichy380/simple-custom-event.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cichy380/simple-custom-event/issues"
+  },
+  "keywords": [
+    "event",
+    "custom-event",
+    "typescript"
+  ],
+  "license": "MIT"
+}
