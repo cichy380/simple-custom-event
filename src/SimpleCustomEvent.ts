@@ -30,7 +30,7 @@ export default class SimpleCustomEvent {
      * @param eventName  Custom event name
      * @param detail  Any data passed when triggering the event
      */
-    public trigger(eventName: string, detail: object) {
+    public trigger(eventName: string, detail: any = null) {
         const event = new CustomEvent(eventName, {detail})
         this.target.dispatchEvent(event)
     }
