@@ -1,6 +1,11 @@
 export default class SimpleCustomEvent {
     private events: {[index: string]: EventListenerOrEventListenerObject} = {}
 
+    /**
+     * Initializes an object
+     *
+     * @param target  DOM interface implemented by objects that can receive events and may have listeners for them.
+     */
     constructor(private target: EventTarget = document) {}
 
     /**
@@ -15,7 +20,7 @@ export default class SimpleCustomEvent {
     }
 
     /**
-     * Removes an event listener previously registered with `CustomEvent.on()`
+     * Removes an event listener previously registered with `SimpleCustomEvent.on()`
      *
      * @param eventName  Custom event name for which to remove an event listener
      */
