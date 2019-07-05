@@ -7,6 +7,7 @@ module.exports = {
     filename: 'simple-custom-event.js',
     library: 'SimpleCustomEvent',
     libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   resolve: {
     extensions: ['.ts', '.js']
