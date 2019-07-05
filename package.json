@@ -8,9 +8,14 @@
   "scripts": {
     "dev": "webpack --mode development",
     "dev:watch": "webpack --mode development --watch",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.18.0",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.2",
