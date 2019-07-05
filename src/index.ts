@@ -1,2 +1,3 @@
 import './polyfill'
-import './SimpleCustomEvent'
+import SimpleCustomEvent from './SimpleCustomEvent'
+export default SimpleCustomEvent

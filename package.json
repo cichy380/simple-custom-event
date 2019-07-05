@@ -1,6 +1,6 @@
 {
   "name": "simple-custom-event",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple custom event implementation, with polyfill",
   "main": "./dist/simple-custom-event.js",
   "types": "./dist/SimpleCustomEvent.d.ts",

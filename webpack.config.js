@@ -5,14 +5,16 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'simple-custom-event.js',
+    library: 'SimpleCustomEvent',
+    libraryTarget: 'umd',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.js']
   },
   module: {
     rules: [
       {
-        test: /\.(tsx?)$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/
       },
