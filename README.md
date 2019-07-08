@@ -87,6 +87,30 @@ with CDN
 </html>
 ```
 
+#### Multi instances
+
+Events simplifies the communication between components of application. Decouples event senders and receivers. 
+Below simple example with multi instances of `SimpleCustomEvent` class:
+
+file-1.js (ES6):
+```js
+import SimpleCustomEvent from 'simple-custom-event'
+
+const myEvtListener = new SimpleCustomEvent()
+myEvtListener.on('MY_CUSTOM_EVENT', () => {
+    // do something...
+})
+```
+
+file-2.js (ES6):
+```js
+import SimpleCustomEvent from 'simple-custom-event'
+
+const myEvtEmiter = new SimpleCustomEvent()
+myEvtEmiter.trigger('MY_CUSTOM_EVENT')
+```
+
+
 ## Methods
 
 All available, public methods of `SimpleCustomEvent` class:
@@ -117,10 +141,26 @@ All available, public methods of `SimpleCustomEvent` class:
     Callback function accepts a parameter: Event object describing the event which has occurred.
     
 * **`.off(eventName)`** <br>
-  Removes an event listener previously registered with `SimpleCustomEvent.on()`.
+  Removes an event listener previously registered with `.on()`.
   * `eventName` <br>
     Type: [string](https://www.typescriptlang.org/docs/handbook/basic-types.html#string) <br>
     Custom event name for which to remove an event listener.
+
+## Contributing
+
+Can you improve this simple project? Feel free to join it! Source code is [TypeScript](https://www.typescriptlang.org/).
+```bash
+# project setup
+yarn install
+
+# compiles for development
+yarn dev
+# or
+yarn dev:watch
+
+# run unit tests
+yarn test
+```
 
 ## License
 
