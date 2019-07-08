@@ -26,7 +26,7 @@ npm install simple-custom-event
 
 #### via CDN
 ```html
-<script src="//unpkg.com/simple-custom-event@0.1.7"></script>
+<script src="//unpkg.com/simple-custom-event@1.0.1"></script>
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ with CDN
     <title>Simple Custom Event</title>
 </head>
 <body>
-<script src="//unpkg.com/simple-custom-event@0.1.7"></script>
+<script src="//unpkg.com/simple-custom-event@1.0.1"></script>
 <script>
     var myEvents = new SimpleCustomEvent()
     
